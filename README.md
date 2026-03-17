@@ -60,18 +60,13 @@ This project evaluates four distinct forecasting approaches to identify the opti
 
 ## Data & Features
 
-### Dataset Composition
-- **Time Period**: 6 months of historical transaction data
-- **Granularity**: Hourly demand aggregation
-- **Total Records**: ~50,000 observations
-- **Missing Values**: Minimal (<0.5%), handled via forward-fill
+### Dataset 
+- Used the Rossmann Dataset
 
 ### Feature Engineering
 - **Temporal Features**: Hour of day, day of week, day of month, quarter
 - **External Features**: Distance, traffic levels
-- **Lagged Features**: Previous hour demand, previous day same-hour demand
+- **Lagged Features**: Previous hour demand, previous day demand,Last fourteen days Demand(Required for XGBoost)
 
 
----
 
-## Project Structure
